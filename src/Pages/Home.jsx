@@ -125,7 +125,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='lg:mr-20 lg:mt-16 lg:w-[500px] '>
+        <div className='lg:mr-20 lg:mt-16 max-md:mt-10 lg:w-[500px] '>
           <img src={intro} alt="" />
         </div>
       </div>
