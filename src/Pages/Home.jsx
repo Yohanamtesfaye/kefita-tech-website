@@ -131,10 +131,10 @@ const Home = () => {
       </div>
       {/* what we do section */}
       <div ref={el => fadeRefs.current[1] = el} className="lg:flex mb-12 lg:px-32 fade-in-enter">
-        <div className='lg:w-[5700px] lg:mt-10'>
+        <div className='lg:w-[5700px] lg:mt-10 max-md:mt-10'>
           <img src={aboutus} alt="" />
         </div>
-        <div className='text-white mx-4'>
+        <div className='text-white lg:mx-4 max-md:mx-8'>
           <p className='lg:mt-32 mb-3 text-4xl font-bold max-md:mt-5 font-outfit'>Who We Are</p>
           <p className='mb-5'>
             Kefita Technology PLC in Addis Ababa, Ethiopia, is your go-to partner for software development, website services, mobile applications, 
@@ -150,7 +150,7 @@ const Home = () => {
       <div ref={el => fadeRefs.current[2] = el} className="bg-[#5873C1] rounded-lg px-4 pt-5 fade-in-enter">
         <p className='text-[#329BC4] font-bold text-center text-xl font-outfit'>OUR SEVICES</p>
         <p className='text-white text-center mt-2 text-2xl font-bold font-outfit'>Unlock The Full Potential of Your Business</p>
-        <div className='mx-4 lg:mx-32 lg:mt-12'>
+        <div className=' lg:mx-32 lg:mt-12'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
             <div className='bg-white rounded-lg mx-4 sm:mx-0'>
               <div className='py-4 px-4 mb-1'>

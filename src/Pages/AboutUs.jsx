@@ -44,7 +44,7 @@ function AboutUs() {
       className={`bg-gradient-to-r from-customBlue5 via-blue-500 to-customBlue6 font-outfit ${fadeIn ? 'fade-in' : ''}`}
     >
       {/* About Us image */}
-      <div className='max-w-6x lg:mx-auto lg:py-0'>
+      <div className='max-w-6x max-md:mt-5  lg:mx-auto lg:py-0'>
         <img src={people1} className="w-full h-auto" alt="People" />
       </div>
       <div className='p-6 lg:py-16 lg:pt-32 pt-20'>
@@ -90,7 +90,7 @@ function AboutUs() {
       </div>
       {/* What we do part */}
       <div className='mx-4 lg:mx-32 lg:mt-12'>
-        <div className='font-bold text-white lg:text-5xl text-lg text-center py-6 mb-8'>WHAT WE DO</div>
+        <div className='font-bold text-white lg:text-5xl text-lg text-center lg:py-6 max-md:py-3 lg:mb-8 max-md:mb-4'>WHAT WE DO</div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           <div className='bg-white rounded-lg mx-4 sm:mx-0'>
             <div className='py-4 px-4 mb-1'>
