@@ -21,10 +21,10 @@ function AboutUs() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setFadeIn(true);
-          observer.disconnect(); // Stop observing after fade-in
+          observer.disconnect(); 
         }
       },
-      { threshold: 0.1 } // Trigger when 10% of the component is visible
+      { threshold: 0.1 } 
     );
 
     if (sectionRef.current) {
@@ -47,7 +47,7 @@ function AboutUs() {
       <div className='max-w-6x max-md:mt-5  lg:mx-auto lg:py-0'>
         <img src={people1} className="w-full h-auto" alt="People" />
       </div>
-      <div className='p-6 lg:py-16 lg:pt-32 pt-20'>
+      <div className='p-6 lg:py-16 lg:pt-32 max-md:pt-10'>
         {/* What we are for small screen */}
         <div className='relative lg:flex text-white w-full max-w-6xl mx-auto px-4 mb-10'>
           <div className='w-full lg:w-1/2 mb-6'>
@@ -68,7 +68,7 @@ function AboutUs() {
       </div>
       {/* Values */}
       <div className='lg:bg-[#5873C1] rounded-xl pb-6 lg:mx-0 mx-4'>
-        <div className='text-customBlue font-bold text-center py-4'><p>Our Values</p></div>
+        <div className='text-customBlue font-bold text-center max-md:mb-3 lg:py-4'><p>Our Values</p></div>
         <div className='text-white font-bold text-center pb-4'><p>Our Work Is Heavily Shaped By Our Core Values</p></div>
         <div className='bg-white max-w-6xl mx-auto py-12 px-8 rounded-2xl flex mb-8'>
           <div className="lg:h-56 lg:w-1 w-3 bg-red-600 mx-4 block"></div>
