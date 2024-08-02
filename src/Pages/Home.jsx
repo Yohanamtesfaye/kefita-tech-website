@@ -117,10 +117,10 @@ const Home = () => {
           <p className='lg:text-8xl font-extrabold  lg:mt-32 max-md:text-3xl max-md:mt-7 font-outfit'>Grow With Tech</p>
           <p className='lg:mt-5 max-md:mt-5 text-lg max-md:text-md'>The perfect spot to expand and advance your business</p>
           <div className='flex mt-3'>
-            <div className='hover:border bg-[#ED2A32] text-white py-2 lg:px-5 max-md:px-5 font-bold rounded-xl hover:border-[#ED2A32] hover:bg-[#2358A8] hover:text-[#ED2A32]'>
+            <div className='hover:border bg-[#ED2A32] text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl hover:border-[#ED2A32] hover:bg-[#2358A8] hover:text-[#ED2A32]'>
               <Link to='/aboutus'>LEARN MORE</Link>
             </div>
-            <div className='border ml-5 hover:bg-[#ED2A32] hover:text-white py-2 lg:px-5 max-md:px-7 font-bold rounded-xl border-[#ED2A32] bg-[#2358A8] text-white'>
+            <div className='border ml-5 hover:bg-[#ED2A32] hover:text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl border-[#ED2A32] bg-[#2358A8] text-white'>
               <Link to='/contactus'>CONTACT US</Link>
             </div>
           </div>
