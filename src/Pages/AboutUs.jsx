@@ -49,7 +49,7 @@ function AboutUs() {
       </div>
       <div className='p-6 lg:py-16 lg:pt-32 max-md:pt-10'>
         {/* What we are for small screen */}
-        <div className='relative lg:flex text-white w-full max-w-6xl mx-auto px-4 mb-10'>
+        <div className='relative lg:flex text-white w-full max-w-6xl mx-auto px-4 lg:mb-10'>
           <div className='w-full lg:w-1/2 mb-6'>
             <img src={people2} className="w-full h-auto object-cover rounded-2xl" alt="People" />
             <div className='absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center p-4 lg:hidden overflow-y-auto rounded-xl'>
