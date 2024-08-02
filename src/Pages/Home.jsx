@@ -240,7 +240,7 @@ const Home = () => {
       </div>
       {/* Partnerships */}
       <div ref={el => fadeRefs.current[4] = el} className='lg:mx-36 lg:my-10 max-md:my-5 lg:p-2 fade-in-enter'>
-        <p className='text-white font-outfit font-bold mb-8'>PARTNERSHIP</p>
+        <p className='text-white font-outfit max-md:px-10 font-bold mb-8'>PARTNERSHIP</p>
         <div className='lg:bg-[#C4C4C4] lg:flex p-2'>
           <div className='ml-5'>
             <img src={dal} className='w-20 h-20 inline-block' alt="" />
