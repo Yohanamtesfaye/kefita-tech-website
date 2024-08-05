@@ -110,50 +110,52 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='max-md:rounded-xl'>
       {/* intro */}
-      <div ref={el => fadeRefs.current[0] = el} className="lg:px-32 max-md:px-10 text-white lg:flex fade-in-enter">
+      <div className="relative overflow-hidden">
+      <div ref={el => fadeRefs.current[0] = el} className="bg-gradient-to-b from-[#5873C1]  lg:pb-10 to-white  lg:px-32 max-md:px-10 text-white lg:flex fade-in-enter relative z-10">
         <div>
-          <p className='lg:text-8xl font-extrabold  lg:mt-32 max-md:text-3xl max-md:mt-7 font-outfit'>Grow With Tech</p>
+          <p className='lg:text-8xl font-extrabold lg:mt-32 max-md:text-3xl max-md:mt-5 max-md:pt-5 font-outfit'>Grow With Tech</p>
           <p className='lg:mt-5 max-md:mt-5 text-lg max-md:text-md'>The perfect spot to expand and advance your business</p>
           <div className='flex mt-3'>
-            <div className='hover:border bg-[#ED2A32] text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl hover:border-[#ED2A32] hover:bg-[#2358A8] hover:text-[#ED2A32]'>
+            <div className='hover:border bg-[#ED2A32] text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl hover:border-[#ED2A32] hover:bg-white hover:text-[#ED2A32]'>
               <Link to='/aboutus'>LEARN MORE</Link>
             </div>
-            <div className='border ml-5 hover:bg-[#ED2A32] hover:text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl border-[#ED2A32] bg-[#2358A8] text-white'>
+            <div className='border ml-5 hover:bg-[#ED2A32] hover:text-white py-2 lg:px-10 max-md:px-3 font-bold rounded-xl hover:border-white bg-[#2358A8] text-white'>
               <Link to='/contactus'>CONTACT US</Link>
             </div>
           </div>
         </div>
-        <div className='lg:mr-20 lg:mt-16 max-md:mt-10 lg:w-[500px] '>
-          <img src={intro} alt="" />
+        <div className='lg:mr-20 lg:mt-16 max-md:mt-10 lg:w-[500px]'>
+          <img src={intro} alt="Intro" />
         </div>
       </div>
+    </div>
       {/* what we do section */}
-      <div ref={el => fadeRefs.current[1] = el} className="lg:flex mb-12 lg:px-32 fade-in-enter">
-        <div className='lg:w-[5700px] lg:mt-10 max-md:mt-10'>
+      <div ref={el => fadeRefs.current[1] = el} className=" lg:flex mb-12 lg:px-32 fade-in-enter">
+        <div className='lg:w-[5700px] lg:mt-16 max-md:mt-10'>
           <img src={aboutus} alt="" />
         </div>
-        <div className='text-white lg:mx-4 max-md:mx-8'>
-          <p className='lg:mt-32 mb-3 text-4xl font-bold max-md:mt-5 font-outfit'>Who We Are</p>
-          <p className='mb-5'>
+        <div className=' lg:mx-4 max-md:mx-8'>
+          <p className='lg:mt-32 text-[#2358A8]  mb-3 text-4xl font-bold max-md:mt-5 font-outfit'>Who We Are</p>
+          <p className='mb-5 text-gray-800 font-roboto leading-7'>
             Kefita Technology PLC in Addis Ababa, Ethiopia, is your go-to partner for software development, website services, mobile applications, 
             and IT consultancy. We specialize in making businesses more efficient and competitive through the rapid deployment of emerging technologies.
             Our clients range from small startups to large enterprises, ensuring tailored solutions for every need. Whether you require custom software,
             IT support, or advanced tech integration, we can help. Serving the local community and beyond, our team of highly skilled professionals is
             dedicated to delivering top-notch technology solutions.
           </p>
-          <Link className='hover:border bg-[#ED2A32] text-white py-2 lg:px-10 max-md:px-7 font-bold rounded-xl hover:border-[#ED2A32] hover:bg-[#2358A8] hover:text-[#ED2A32] my-10' to='/aboutus'>LEARN MORE</Link>
+          <Link className='hover:border bg-[#ED2A32] py-2 text-white lg:px-10 max-md:px-7 font-bold rounded-xl  hover:bg-[#2358A8] hover:text-[#ED2A32] my-10' to='/aboutus'>LEARN MORE</Link>
         </div>
       </div>
       {/* our services */}
-      <div ref={el => fadeRefs.current[2] = el} className="bg-[#5873C1] rounded-lg px-4 pt-5 fade-in-enter">
-        <p className='text-[#329BC4] font-bold text-center text-xl font-outfit'>OUR SEVICES</p>
-        <p className='text-white text-center mt-2 text-2xl font-bold font-outfit'>Unlock The Full Potential of Your Business</p>
+      <div ref={el => fadeRefs.current[2] = el} className=" rounded-lg px-4 pt-5 fade-in-enter">
+        <p className='text-[#2358A8] font-bold text-center text-xl font-outfit'>OUR SEVICES</p>
+        <p className='text-center mt-2 text-2xl font-bold font-outfit '>Unlock The Full Potential of Your Business</p>
         <div className=' lg:mx-32 lg:mt-12'>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            <div className='bg-white rounded-lg mx-4 sm:mx-0'>
-              <div className='py-4 px-4 mb-1'>
+            <div className='bg-white rounded-lg mx-4 shadow-2xl sm:mx-0'>
+              <div className='py-4 px-4 mb-1 '>
                 <img src={div} className="w-full h-auto" alt="Software Development" />
               </div>
               <div className='px-4'>
@@ -161,7 +163,7 @@ const Home = () => {
                 <p className='text-customBlue5 font-medium mb-3'>Custom software development services tailored to meet specific business needs.</p>
               </div>
             </div>
-            <div className='bg-white rounded-lg mx-4 sm:mx-0'>
+            <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
               <div className='py-4 px-4 mb-1'>
                 <img src={it} className="w-full h-auto" alt="IT Consultancy" />
               </div>
@@ -170,7 +172,7 @@ const Home = () => {
                 <p className='text-customBlue5 font-medium mb-3'>Expert IT consultancy services to optimize business processes and technology use.</p>
               </div>
             </div>
-            <div className='bg-white rounded-lg mx-4 sm:mx-0'>
+            <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
               <div className='py-4 px-4 mb-1'>
                 <img src={gps} className="w-full h-auto" alt="GPS and Tracking Solutions" />
               </div>
@@ -181,12 +183,12 @@ const Home = () => {
             </div>
           </div>
           <div className='flex justify-center'>
-            {!showMore && (<button className='bg-red-600 text-white px-4 py-2 rounded-lg my-8' onClick={() => setShowMore(!showMore)}> Show More</button>)}
+            {!showMore && (<button className='bg-red-600 px-4 py-2 text-white rounded-lg my-8' onClick={() => setShowMore(!showMore)}> Show More</button>)}
           </div>
           {showMore && (
             <div>
               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-32 mt-12'>
-                <div className='bg-white rounded-lg mx-4 sm:mx-0'>
+                <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
                   <div className='py-4 px-4 mb-1'>
                     <img src={data} className="w-full h-auto" alt="Data Research and Analysis" />
                   </div>
@@ -195,7 +197,7 @@ const Home = () => {
                     <p className='text-customBlue5 font-medium mb-3'>Conducting data research, analysis, and consultancy for organizations.</p>
                   </div>
                 </div>
-                <div className='bg-white rounded-lg mx-4 sm:mx-0'>
+                <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
                   <div className='py-4 px-4 mb-1'>
                     <img src={electronic} className="w-full h-auto" alt="Electronics Trade & Network Cabling" />
                   </div>
@@ -204,7 +206,7 @@ const Home = () => {
                     <p className='text-customBlue5 font-medium mb-3'>The company engages in the trade of electronics and electrical goods, focusing on network cabling contract work to ensure reliable and efficient connectivity.</p>
                   </div>
                 </div>
-                <div className='bg-white rounded-lg mx-4 sm:mx-0'>
+                <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
                   <div className='py-4 px-4 mb-1'>
                     <img src={hw} className="w-full h-auto" alt="Computer Hardware Maintenance and Upgrades" />
                   </div>
@@ -215,7 +217,7 @@ const Home = () => {
                 </div>
               </div>
               <div className='flex justify-center'>
-                <button className='bg-red-600 text-white px-4 py-2 rounded-lg my-8'onClick={() => setShowMore(!showMore)}>Show Less </button>
+                <button className='bg-red-600 px-4 py-2 text-white rounded-lg my-8'onClick={() => setShowMore(!showMore)}>Show Less </button>
               </div>
             </div>
           )}
@@ -224,7 +226,7 @@ const Home = () => {
       {/* testimonials */}
       <div ref={el => fadeRefs.current[3] = el} className="fade-in-enter">
         <p className='text-[#32C48F] my-8 text-center '>TESTIMONIALS</p>
-        <h1 className='text-3xl font-outfit text-center mt-5 text-white'>Read What Others <br /> Have to Say</h1>
+        <h1 className='text-3xl font-outfit text-center mt-5'>Read What Others <br /> Have to Say</h1>
         <div className="lg:flex hidden sm:block max-md:mt-20 justify-center lg:mt-16 lg:px-32">
           {profiles.map((profile, index) => (
             <ProfileCard key={index} {...profile} />
@@ -240,23 +242,23 @@ const Home = () => {
       </div>
       {/* Partnerships */}
       <div ref={el => fadeRefs.current[4] = el} className='lg:mx-36 lg:my-10 max-md:my-5 lg:p-2 fade-in-enter'>
-        <p className='text-white font-outfit max-md:px-10 font-bold mb-8'>PARTNERSHIP</p>
+        <p className='font-outfit max-md:px-10 font-bold mb-8'>PARTNERSHIP</p>
         <div className='lg:bg-[#C4C4C4] lg:flex p-2'>
           <div className='ml-5'>
             <img src={dal} className='w-20 h-20 inline-block' alt="" />
-            <p className='text-white text-2xl font-bold mt-5 mx-1 inline-block'>~Dalex~</p>
+            <p className='text-2xl font-bold mt-5 mx-1 inline-block'>~Dalex~</p>
           </div>
           <div className='ml-5'>
             <img src={str} className='w-20 h-20 inline-block' alt="" />
-            <p className='text-white text-2xl font-bold mt-5 mx-1 inline-block'>Star Technology</p>
+            <p className='text-xl font-bold mt-5 mx-1 inline-block'>Dat Star Technology</p>
           </div>
           <div className='mx-5'>
             <img src={mt} className='w-20 h-20 inline-block' alt="" />
-            <p className='text-white text-2xl font-bold mt-5 mx-1 inline-block'>Melfan Tech</p>
+            <p className='text-2xl font-bold mt-5 mx-1 inline-block'>Melfan Tech</p>
           </div>
           <a href='https://www.kuraztech.com/' className='mx-5'>
             <img src={kz} className='w-20 h-20 inline-block' alt="" />
-            <p className='text-white text-2xl font-bold mt-5 mx-1 inline-block'>Kuraz Tech</p>
+            <p className='text-2xl font-bold mt-5 mx-1 inline-block'>Kuraz Tech</p>
           </a >
         </div>
       </div>

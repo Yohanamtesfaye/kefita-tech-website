@@ -10,9 +10,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className='font-meri'>
+    <div>
       <div>
-        <AiOutlineMenu size={24} onClick={handleNav} className="absolute top-4 right-4 z-[99] md:hidden text-white"/>
+        <AiOutlineMenu size={24} onClick={handleNav} className="absolute top-4 right-4 z-[99] md:hidden"/>
         <div className='pl-4 sm:hidden'>
           <img src={logo} className='w-20 pt-3' alt="" />
         </div>
@@ -35,15 +35,15 @@ const Navbar = () => {
             </div>
           </div> : ''
         }
-        <div className='hidden md:flex text-white justify-between pt-8 px-36 rounded-lg'>
+        <div className='hidden md:flex shadow-inner text-white justify-between rounded-2xl  py-5  px-36'>
           <div>
             <img src={logo} className='w-20 pt-3' alt="" />
           </div>
-          <div className='flex justify-center items-center text-white space-x-8'>
+          <div className='flex justify-center items-center text-black  space-x-8'>
             <div className='hover:underline hover:text-[#ED2A32] font-bold p-0'><Link to='/'>Home</Link></div>
             <div className='hover:underline hover:text-[#ED2A32] font-bold p-0'><Link to='/aboutus'>About Us</Link></div>
             <div className='hover:underline hover:text-[rgb(237,42,50)] font-bold'><Link to='/blog'>Blog</Link></div>
-            <div className='hover:border bg-[#ED2A32] text-white py-4 px-8 font-bold rounded-md hover:border-[#ED2A32] hover:bg-[#2358A8] hover:text-[#ED2A32]'>
+            <div className='hover:border bg-[#ED2A32] text-white py-4 px-8 font-bold rounded-md hover:border-[#ED2A32] hover:bg-white hover:text-[#ED2A32]'>
               <Link to='/contactus'>Contact Us</Link>
             </div>
           </div>

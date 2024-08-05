@@ -23,3 +23,12 @@
     opacity: 1;
   }
 }
+/* styles.css */
+.custom-gradient-top-bottom {
+  background: linear-gradient(to top, #2358A8, rgb(255, 255, 255)),
+              linear-gradient(to bottom, #2358A8, rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: top, bottom;
+}
+
