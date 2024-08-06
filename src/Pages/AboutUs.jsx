@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,10 +11,37 @@ import data from "../assets/data.jpg";
 import electronic from "../assets/electronic.jpg";
 import gps from "../assets/gps.jpg";
 import hw from "../assets/hw.jpg";
-import Footer from "../Components/Footer";
+import React, { useRef,useState,useEffect } from 'react';
+
 
 function AboutUs() {
     const [showMore, setShowMore] = useState(false);
+    const fadeRefs = useRef([]);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+              entry.target.classList.remove('fade-in-enter');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+  
+      fadeRefs.current.forEach(ref => {
+        if (ref) observer.observe(ref);
+      });
+  
+      return () => {
+        fadeRefs.current.forEach(ref => {
+          if (ref) observer.unobserve(ref);
+        });
+      };
+    }, []);
     const profiles = [
         {
           name: 'OLIVIA COLE',
@@ -36,7 +62,7 @@ function AboutUs() {
       
       const ProfileCard = ({ name, description, imgSrc }) => (
         <div className="bg-[#313675] text-center rounded-lg p-6 m-4 max-md:mt-20 relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-12">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-12 "ref={el => fadeRefs.current[1] = el}>
           <img src={imgSrc} alt={name} className="rounded-full w-36 h-36 border-4 border-blue-700" />
         </div>
         <div className="mt-8 pt-12">
