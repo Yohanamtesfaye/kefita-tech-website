@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import intro from '../assets/Vision.png';
 import aboutus from '../assets/Aboutus.png';
 import { Link } from 'react-router-dom';
-import div from "../assets/div.jpg";
+import div from "../assets/develop.png";
 import it from "../assets/consult.webp";
-import data from "../assets/data.jpg";
-import electronic from "../assets/electronic.jpg";
-import gps from "../assets/gps.jpg";
-import hw from "../assets/hw.jpg";
+import data from "../assets/datar.png";
+import electronic from "../assets/networking.png";
+import gps from "../assets/speed.png";
+import hw from "../assets/maintenance.png";
 import dal from "../assets/dal.png";
 import str from "../assets/str.png";
 import mt from "../assets/mt.png";
@@ -187,8 +187,8 @@ const Home = () => {
           </div>
           {showMore && (
             <div>
-              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-32 mt-12'>
-                <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx- mt-12'>
+                <div className='bg-white shadow-2xl rounded-lg mx-4 sm:mx-0 '>
                   <div className='py-4 px-4 mb-1'>
                     <img src={data} className="w-full h-auto" alt="Data Research and Analysis" />
                   </div>
