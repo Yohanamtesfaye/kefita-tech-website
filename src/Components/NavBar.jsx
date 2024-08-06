@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
-import logo from '../assets/kefita_logo.jpg'
+import logo from '../assets/kefita_logo.jpg';
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -11,10 +12,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <div>
+      <div className=''>
         <AiOutlineMenu size={24} onClick={handleNav} className="absolute top-4 right-4 z-[99] md:hidden"/>
         <div className='pl-4 sm:hidden'>
-          <img src={logo} className='w-20 pt-3' alt="" />
+          <img src={logo} className='w-20 pt-3' alt="Kefita Logo" />
         </div>
         {
           nav ?
@@ -35,15 +36,15 @@ const Navbar = () => {
             </div>
           </div> : ''
         }
-        <div className='hidden md:flex shadow-inner text-white justify-between rounded-2xl  py-5  px-36'>
+        <div className='hidden md:flex items-center justify-between w-full px-8 py-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-transparent'>
           <div>
-            <img src={logo} className='w-20 pt-3' alt="" />
+            <img src={logo} className='w-20' alt="Kefita Logo" />
           </div>
-          <div className='flex justify-center items-center text-black  space-x-8'>
-            <div className='hover:underline hover:text-[#ED2A32] font-bold p-0'><Link to='/'>Home</Link></div>
-            <div className='hover:underline hover:text-[#ED2A32] font-bold p-0'><Link to='/aboutus'>About Us</Link></div>
-            <div className='hover:underline hover:text-[rgb(237,42,50)] font-bold'><Link to='/blog'>Blog</Link></div>
-            <div className='hover:border bg-[#ED2A32] text-white py-4 px-8 font-bold rounded-md hover:border-[#ED2A32] hover:bg-white hover:text-[#ED2A32]'>
+          <div className='flex justify-center items-center space-x-8 text-white'>
+            <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/'>Home</Link></div>
+            <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/aboutus'>About Us</Link></div>
+            <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/blog'>Blog</Link></div>
+            <div className='bg-[#ED2A32] text-white py-2 px-4 font-bold rounded-md hover:bg-white hover:text-[#ED2A32] hover:border hover:border-[#ED2A32]'>
               <Link to='/contactus'>Contact Us</Link>
             </div>
           </div>

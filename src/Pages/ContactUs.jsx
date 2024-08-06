@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import contact1 from "../assets/Mentionr.jpg";
+import contact1 from "../assets/contact.png";
 
 
 const ContactUs = () => {
@@ -31,19 +31,19 @@ const ContactUs = () => {
   return (
     <div
       ref={sectionRef}
-      className={`font-outfit bg-customBlue5 pb-4 ${fadeIn ? 'fade-in' : ''}`}
+      className={`font-outfit bg-gradient-to-b from-[#5873C1]  pb-4 ${fadeIn ? 'fade-in' : ''}`}
     >
-      <div className="text-white p-4 text-center font-bold text-2xl">
+      <div className="text-white p-4 text-center font-bold text-2xl pt-32">
         <h1>Contact Us</h1>
       </div>
-      <div className="lg:flex lg:m-12 lg:mt-5 shadow-2xl rounded-2xl bg-white">
-        <div className="lg:p-8 px-2 lg:w-1/2">
-          <img src={contact1} alt="Contact Us" className="w-[500px] lg:ml-12" />
+      <div className="lg:flex lg:m-10 lg:mt-5 px-32 ">
+        <div className="lg:p-8  px-2  ">
+        <img src={contact1} className="w-[500px]" alt="People" />        
         </div>
-        <div className="bg-white lg:p-8 p-4 lg:w-1/2 rounded-xl">
+        <div className=" lg:p-8 p-4 lg:w-1/2 rounded-xl">
           <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
             <div>
-              <label htmlFor="fullName" className="block text-lg font-medium text-customBlue">
+              <label htmlFor="fullName" className="block text-lg font-medium text-white">
                 Full Name
               </label>
               <input
@@ -55,7 +55,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label htmlFor="phoneNumber" className="block text-lg font-medium text-customBlue">
+              <label htmlFor="phoneNumber" className="block text-lg font-medium text-white">
                 Phone Number
               </label>
               <input
@@ -67,7 +67,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-lg font-medium text-customBlue">
+              <label htmlFor="email" className="block text-lg font-medium text-white">
                 Email Address
               </label>
               <input
@@ -79,7 +79,7 @@ const ContactUs = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-lg font-medium text-customBlue">
+              <label htmlFor="message" className="block text-lg font-medium text-white">
                 Message
               </label>
               <textarea

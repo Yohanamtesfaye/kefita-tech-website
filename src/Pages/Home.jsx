@@ -110,11 +110,11 @@ const Home = () => {
   };
 
   return (
-    <div className='max-md:rounded-xl'>
+    <div className='max-md:rounded-xl '>
       {/* intro */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
       <div ref={el => fadeRefs.current[0] = el} className="bg-gradient-to-b from-[#5873C1]  lg:pb-10 to-white  lg:px-32 max-md:px-10 text-white lg:flex fade-in-enter relative z-10">
-        <div>
+        <div className=''>
           <p className='lg:text-8xl font-extrabold lg:mt-32 max-md:text-3xl max-md:mt-5 max-md:pt-5 font-outfit'>Grow With Tech</p>
           <p className='lg:mt-5 max-md:mt-5 text-lg max-md:text-md'>The perfect spot to expand and advance your business</p>
           <div className='flex mt-3'>

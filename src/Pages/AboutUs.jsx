@@ -2,15 +2,15 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import people2 from "../assets/Meeting.png";
-import div from "../assets/div.jpg";
+import div from "../assets/develop.png";
 import vision from "../assets/vision.jpg";
 import mission from "../assets/mission.jpg";
 import objectives from "../assets/objectives.png";
 import it from "../assets/consult.webp";
-import data from "../assets/data.jpg";
-import electronic from "../assets/electronic.jpg";
-import gps from "../assets/gps.jpg";
-import hw from "../assets/hw.jpg";
+import data from "../assets/datar.png";
+import electronic from "../assets/networking.png";
+import gps from "../assets/speed.png";
+import hw from "../assets/maintenance.png";
 import React, { useRef,useState,useEffect } from 'react';
 
 
@@ -104,29 +104,29 @@ function AboutUs() {
         ]
     }
     return (
-        <div className='   font-outfit '>
+        <div className='   font-outfit mx-0 '>
             <div className='bg-white'> 
             {/* about us image */}
             {/* <div className='max-w-6x lg:mx-aut  lg:px- '>
                 <img src={people1} className="w-full h-[300px]" alt="People" />
             </div> */}
-            <div className='bg-gradient-to-b from-[#5873C1] via-wite lg:py-12 py-2 '>
-             <div className=' lg:flex  text-white items-center w-full max-w-6xl mx-auto     lg:px-4'>
+            <div className='bg-gradient-to-b from-[#5873C1] via-[#5873C1] lg:pt-12 py-2 pb-32 '>
+             <div ref={el => fadeRefs.current[0] = el}  className=' lg:flex  text-white items-center w-full max-w-6xl mx-auto fade-in-enterlg:px-4 mt-6'>
               <div className='w-72 lg:w-1/2 lg:ml-0 ml-12 lg:mb-6'>
                   <img src={people2} className="w-full h-auto" alt="People" />        
               </div>
               <div className='  lg:w-1/2  lg:mt-12 lg:ml-20 mx-4 mb-6 text-customBlu5'>
                   <div className='font-bold text-lg py-4 lg:mt-3 lg:text-3xl'><h2>WHAT WE ARE</h2></div>
                   <div className='font-bold text-2xl pb-4'><h2>Committed to Excellence</h2></div>
-                  <div className='lg:text-lg lg:pb-2 pb-20'><p>Kefita Technology PLC in Addis Ababa, Ethiopia, offers cost-efficient IT support for organizations, focusing on software development, website services, mobile applications, and IT consultancy services. We aim to evolve from a startup to a leading tech product manufacturer by delivering advanced solutions and fostering long-term client relationships. We provide efficient, high-quality services tailored to complex organizational demands, boosting productivity and maximizing value. Our unique service level agreements and fixed costs cater to diverse needs and budgets, ensuring a real business advantage.</p></div>
+                  <div className='lg:text-lg lg:pb-2 '><p>Kefita Technology PLC in Addis Ababa, Ethiopia, offers cost-efficient IT support for organizations, focusing on software development, website services, mobile applications, and IT consultancy services. We aim to evolve from a startup to a leading tech product manufacturer by delivering advanced solutions and fostering long-term client relationships. We provide efficient, high-quality services tailored to complex organizational demands, boosting productivity and maximizing value. Our unique service level agreements and fixed costs cater to diverse needs and budgets, ensuring a real business advantage.</p></div>
               </div>
           </div>
             </div>
             </div>
    
             {/* values */}
-            <div className=' rounded-xl pb-6 lg:mx-0 mx-4   '>
-                <div className='text-customBlue    font-bold text-center py-4 text-3xl'><p>Our Values</p></div>
+            <div ref={el => fadeRefs.current[1] = el}  className=' rounded-xl pb-6 lg:mx-0 mx-4 pt-0 mt-0 fade-in-enetr '>
+                <div className='text-customBlue  font-bold text-center pb-4 text-3xl '><p>Our Values</p></div>
                 <div className='text-customBlue5 font-bold text-center pb-4'><p>Our Work Is Heavily Shaped By Our Core Values</p></div>
                 <div className='bg-white max-w-6xl mx-auto py-12 px-8 rounded-2xl flex  mb-8 shadow-xl'>
                     <div className="lg:h-56 lg:w-1 w-3 bg-red-600 mx-4 block"></div>
@@ -147,7 +147,7 @@ function AboutUs() {
                 </div>
             </div>
             {/* what we do part */}
-            <div className='mx-4  via-wite  lg:mx-32 px-8 pb-12 lg:mt-12 roundd-xl'>
+            <div ref={el => fadeRefs.current[2] = el} className='lg:mx-32 px-2 pb-12 lg:mt-12 roundd-xl fade-in-enter'>
                 <div className='font-bold text-customBlue5 lg:text-4xl text-lg text-center py-6 mb-8'>WHAT WE DO</div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 '>
                     <div className='bg-white shadow-xl rounded-lg mx-4 sm:mx-0'>
@@ -186,7 +186,7 @@ function AboutUs() {
 </div>
 {showMore && (
     <div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-32 mt-  px-8 '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  lg:mx-32   px-2 '>
             <div className='bg-white shadow-xl rounded-lg mx-4 sm:mx-0'>
                 <div className='py-4 px-4 mb-1'>
                     <img src={data} className="w-full h-auto" alt="Data Research and Analysis" />
@@ -222,7 +222,7 @@ function AboutUs() {
 )}
 </div>
          {/* our process part */}
-            <div className=' rounded-xl pb-6 mt-4'>
+            <div ref={el => fadeRefs.current[3] = el}  className=' rounded-xl pb-6 mt-4 fade-in-enter'>
                 <div className='text-[#32C48F] font-bold text-center py-4 mb-3 text-xl'><p>Our Process</p></div>
                 <div className='bg-white shadow-2xl max-w-6xl lg:mx-auto mx-4 py-12 lg:px-8 rounded-2xl flex flex-col lg:flex-row mb-8'>
                     <div className='lg:mx-6   '>
@@ -258,7 +258,7 @@ function AboutUs() {
             
             </div>
              {/* testimonials */}
-            <div className='pb-8'>
+            <div ref={el => fadeRefs.current[4] = el}  className='pb-8 fade-in-enter'>
             <p className='text-[#32C48F] my-8 text-center '>OUR TEAM</p>
                 <div className="lg:flex hidden sm:block max-md:mt-20 justify-center lg:mt-16 lg:px-32">
                 {profiles.map((profile, index) => (
