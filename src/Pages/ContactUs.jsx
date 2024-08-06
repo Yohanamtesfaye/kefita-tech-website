@@ -33,10 +33,10 @@ const ContactUs = () => {
       ref={sectionRef}
       className={`font-outfit bg-gradient-to-b from-[#5873C1]  pb-4 ${fadeIn ? 'fade-in' : ''}`}
     >
-      <div className="text-white p-4 text-center font-bold text-2xl pt-32">
+      <div className="text-white p-4 text-center font-bold text-2xl lg:pt-32">
         <h1>Contact Us</h1>
       </div>
-      <div className="lg:flex lg:m-10 lg:mt-5 px-32 ">
+      <div className="lg:flex lg:m-10 lg:mt-5 lg:px-32 ">
         <div className="lg:p-8  px-2  ">
         <img src={contact1} className="w-[500px]" alt="People" />        
         </div>
