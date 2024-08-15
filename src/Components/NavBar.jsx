@@ -36,11 +36,11 @@ const Navbar = () => {
             </div>
           </div> : ''
         }
-        <div className='hidden md:flex items-center justify-between w-full px-8 py-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-transparent'>
+        <div className='hidden md:flex items-center justify-between w-full px-8 py-4 fixed top-0 left-0 right-0 z-50 bg-white'>
           <div>
             <img src={logo} className='w-20' alt="Kefita Logo" />
           </div>
-          <div className='flex justify-center items-center space-x-8 text-white'>
+          <div className='flex justify-center items-center space-x-8 text-[#2358A8]'>
             <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/'>Home</Link></div>
             <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/aboutus'>About Us</Link></div>
             <div className='hover:underline hover:text-[#ED2A32] font-bold'><Link to='/blog'>Blog</Link></div>
